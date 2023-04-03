@@ -1,3 +1,4 @@
 export function calculateTip(billAmount, tipPercentage) {
-  // Tu código aquí 👈
+  const tipAmount = billAmount * (tipPercentage / 100);
+  return tipAmount;
 }
