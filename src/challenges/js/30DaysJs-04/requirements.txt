@@ -1,0 +1,8 @@
+pg-js-template@1.0.0 C:\xampp\htdocs\AAPlatziChallenges\playground-challenges\src\challenges\js\30DaysJs-04
++-- @babel/core@7.18.13
++-- @babel/preset-env@7.18.10
++-- babel-jest@29.0.1
++-- jest-environment-jsdom@29.0.1
++-- jest@29.0.1
+`-- parcel@2.7.0
+
