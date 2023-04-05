@@ -1,26 +1,26 @@
 {
-  "name": "pg-js-template",
-  "version": "1.0.0",
-  "source": "index.html",
-  "main": "./src/index.js",
-  "scripts": {
-    "dev": "parcel",
-    "build": "parcel build",
-    "test": "jest"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "7.18.13",
-    "@babel/preset-env": "7.18.10",
-    "babel-jest": "29.0.1",
-    "jest": "29.0.1",
-    "parcel": "2.7.0",
-    "jest-environment-jsdom": "29.0.1"
-  },
-  "jest": {
-    "testEnvironment": "jsdom"
-  },
-  "description": "En este desafío, debes crear la lógica de la función `isLeapYear`, que determina si un año es bisiesto o no. Un año es bisiesto si cumple con las siguientes condiciones:"
+    "name": "pg-js-template",
+    "version": "1.0.0",
+    "source": "index.html",
+    "main": "./src/index.js",
+    "scripts": {
+        "dev": "parcel",
+        "build": "parcel build",
+        "test": "jest"
+    },
+    "keywords": [],
+    "author": "I. j. Gallardo Navarro",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "7.18.13",
+        "@babel/preset-env": "7.18.10",
+        "babel-jest": "29.0.1",
+        "jest": "29.0.1",
+        "parcel": "2.7.0",
+        "jest-environment-jsdom": "29.0.1"
+    },
+    "jest": {
+        "testEnvironment": "jsdom"
+    },
+    "description": "En este desafío, debes crear la lógica de la función `isLeapYear`, que determina si un año es bisiesto o no. Un año es bisiesto si cumple con las siguientes condiciones:"
 }
