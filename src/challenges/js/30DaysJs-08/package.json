@@ -9,17 +9,21 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "author": "Aprendriz Digital Sena I. J. Gallardo Navarro",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "7.18.13",
     "@babel/preset-env": "7.18.10",
     "babel-jest": "29.0.1",
     "jest": "29.0.1",
-    "parcel": "2.7.0",
-    "jest-environment-jsdom": "29.0.1"
+    "jest-environment-jsdom": "29.0.1",
+    "parcel": "2.7.0"
   },
   "jest": {
     "testEnvironment": "jsdom"
+  },
+  "description": "En este desafío tendrás que crear una calculadora mediante el uso de closures.",
+  "dependencies": {
+    "cowsay": "^1.5.0"
   }
 }

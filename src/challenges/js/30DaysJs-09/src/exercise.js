@@ -1,3 +1,6 @@
 export function myMap(array, func) {
-  // Tu código aquí 👈
+return array.reduce((accumulator, currentValue) => {
+    accumulator.push(func(currentValue));
+    return accumulator;
+  }, []);
 }
