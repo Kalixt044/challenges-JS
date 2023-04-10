@@ -1,0 +1,7 @@
+Package                 Current   Wanted  Latest  Location                             Depended by
+@babel/core             7.18.13  7.18.13  7.21.4  node_modules/@babel/core             multiply-elements
+@babel/preset-env       7.18.10  7.18.10  7.21.4  node_modules/@babel/preset-env       multiply-elements
+babel-jest               29.0.1   29.0.1  29.5.0  node_modules/babel-jest              multiply-elements
+jest                     29.0.1   29.0.1  29.5.0  node_modules/jest                    multiply-elements
+jest-environment-jsdom   29.0.1   29.0.1  29.5.0  node_modules/jest-environment-jsdom  multiply-elements
+parcel                    2.7.0    2.7.0   2.8.3  node_modules/parcel                  multiply-elements
