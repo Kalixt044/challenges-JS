@@ -1,3 +1,4 @@
 export function protectDog(dog) {
-  // Tu código aquí 👈
+const protectedDog = Object.freeze(Object.assign({}, dog));
+  return protectedDog;
 }
