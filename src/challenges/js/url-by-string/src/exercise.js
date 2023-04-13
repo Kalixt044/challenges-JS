@@ -1,3 +1,4 @@
 export function parseToURL(title) {
-  // Tu código aquí 👈
+const url = title.toLowerCase().replace(/ /g, "-");
+  return url;
 }
