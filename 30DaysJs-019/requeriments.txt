@@ -1,0 +1,7 @@
+Package                 Current   Wanted  Latest  Location                             Depended by
+@babel/core             7.18.13  7.18.13  7.21.4  node_modules/@babel/core             30DaysJs-19
+@babel/preset-env       7.18.10  7.18.10  7.21.4  node_modules/@babel/preset-env       30DaysJs-19
+babel-jest               29.0.1   29.0.1  29.5.0  node_modules/babel-jest              30DaysJs-19
+jest                     29.0.1   29.0.1  29.5.0  node_modules/jest                    30DaysJs-19
+jest-environment-jsdom   29.0.1   29.0.1  29.5.0  node_modules/jest-environment-jsdom  30DaysJs-19
+parcel                    2.7.0    2.7.0   2.8.3  node_modules/parcel                  30DaysJs-19

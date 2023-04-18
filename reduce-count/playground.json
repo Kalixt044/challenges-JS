@@ -1,0 +1,15 @@
+{
+  "title": "Calcula la frecuencia con la que aparece un número",
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+ "runner": "sandpack",
+  "entryFile": "exercise.js",
+  "excludeFiles": [],
+  "hideFiles": [
+    ".*.test.js$",
+    "styles.css$",
+    "index.js$",
+    "index.html$"
+  ]
+}

@@ -1,0 +1,8 @@
+pg-js-template@1.0.0 C:\xampp\htdocs\AAPlatziChallenges\playground-challenges\src\challenges\js\30DaysJs-05
++-- UNMET DEPENDENCY @babel/core@7.18.13
++-- UNMET DEPENDENCY @babel/preset-env@7.18.10
++-- UNMET DEPENDENCY babel-jest@29.0.1
++-- UNMET DEPENDENCY jest-environment-jsdom@29.0.1
++-- UNMET DEPENDENCY jest@29.0.1
+`-- UNMET DEPENDENCY parcel@2.7.0
+

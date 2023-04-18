@@ -1,0 +1,7 @@
+Package                 Current   Wanted  Latest  Location                             Depended by
+@babel/core             7.18.13  7.18.13  7.21.4  node_modules/@babel/core             hash-table-getAllKeys
+@babel/preset-env       7.18.10  7.18.10  7.21.4  node_modules/@babel/preset-env       hash-table-getAllKeys
+babel-jest               29.0.1   29.0.1  29.5.0  node_modules/babel-jest              hash-table-getAllKeys
+jest                     29.0.1   29.0.1  29.5.0  node_modules/jest                    hash-table-getAllKeys
+jest-environment-jsdom   29.0.1   29.0.1  29.5.0  node_modules/jest-environment-jsdom  hash-table-getAllKeys
+parcel                    2.7.0    2.7.0   2.8.3  node_modules/parcel                  hash-table-getAllKeys

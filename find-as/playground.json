@@ -1,0 +1,15 @@
+{
+  "title": "Resuelve si dentro de una lista de cartas tienes el AS",
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+ "runner": "sandpack",
+  "entryFile": "exercise.js",
+  "excludeFiles": [],
+  "hideFiles": [
+    ".*.test.js$",
+    "styles.css$",
+    "index.js$",
+    "index.html$"
+  ]
+}
