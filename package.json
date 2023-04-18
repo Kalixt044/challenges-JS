@@ -1,0 +1,11 @@
+{
+  "name": "challenges-js",
+  "version": "1.0.0",
+  "description": "Monorepo para gestionar los retos que salen en el Coding Playground.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aprendiz Digital Sena Isidro gallardo Navaro",
+  "license": "ISC"
+}
