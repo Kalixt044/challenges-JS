@@ -3,10 +3,22 @@ import { Reservation } from "./Reservation";
 
 export class PremiumFlight extends Flight {
   constructor(origin, destination, date, capacity, price, specialService) {
-    // Tu código aquí 👈
+    super(origin, destination, date, capacity, price);
+    this.specialService = specialService;
   }
 
   sellTicket(passenger) {
-    // Tu código aquí 👈
+    
+    if (this.capacity > 0) {
+      this.passengers.push(passenger);
+      passenger.flights.push({
+        origin: this.origin,
+        destination: this.destination,
+        date: this.date,
+        price: this.price + this.specialService,
+      });
+      this.capacity--;
+      return new Reservation(this, passenger);
+    } else
   }
 }
