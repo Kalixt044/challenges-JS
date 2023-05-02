@@ -4,5 +4,4 @@ export function deepFreeze(obj) {return new Promise((resolve) => {
     resolve(message);
   }, time);
 });
-
 }
