@@ -16,7 +16,7 @@ import { Astronaut, SpaceStation, Satelite, simulacion } from "./exercise";
   estacionPlatzi.addTeamMember(capitanDC);
 
   document.getElementById("app").innerHTML = `
-    <h2>Sistema de Comunicación del Satélite Espacial</h2>
+    <h2>Sistema de Comunicación del Satélite Espacial   Klto44</h2>
 
     <p>Astronautas: </p>
     <p>
