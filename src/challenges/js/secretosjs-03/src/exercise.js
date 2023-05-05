@@ -1,70 +1,48 @@
 export class Motor {
-  constructor(propulsionTo, historyInstance) {
-    let status = "off"
-    let lastChange = null;
-    let history = historyInstance;
-
-    this.getStatus = () => status;
-    
-    let setStatus = (newStatus) => {
-      if (status !== newStatus) {
-        let newChange = { propulsionTo, status: newStatus };
-        if (!lastChange || JSON.stringify(newChange) !== JSON.stringify(lastChange)) {
-          history.addChange(newChange);
-          lastChange = newChange;
-        }
-        status = newStatus;
-      }
-    };
-
-    this.turnOn = () => setStatus("on");
-    this.turnOff = () => setStatus("off");
-    
-    this.getHistory = () => history.getFullState();
-  }export class Motor {
-    constructor(propulsionTo, historyInstance) {
-      let status = "off"
-      let lastChange = null;
-      let history = historyInstance;
-  
-      this.getStatus = () => status;
-      
-      let setStatus = (newStatus) => {
-        if (status !== newStatus) {
-          let newChange = { propulsionTo, status: newStatus };
-          if (!lastChange || JSON.stringify(newChange) !== JSON.stringify(lastChange)) {
-            history.addChange(newChange);
-            lastChange = newChange;
-          }
-          status = newStatus;
-        }
-      };
-  
-      this.turnOn = () => setStatus("on");
-      this.turnOff = () => setStatus("off");
-      
-      this.getHistory = () => history.getFullState();
-    }
+  // Constructor de la clase `Motor`.
+  constructor(propulsionTo, history) {
+    // Establece una propiedad llamada `propulsionTo` para el objeto `Motor`.
+    this.propulsionTo = propulsionTo;
+    // Establece una propiedad llamada `history` para el objeto `Motor`.
+    this.history = history;
+    // Establece una propiedad llamada `status` para el objeto `Motor`.
+    this.status = "off";
   }
-  
-  export class History {
-    constructor() {
-      let changes = [];
-  
-      this.addChange = (change) => changes.push(change);
-  
-      this.getFullState = () => changes;
-    }
+
+  // Método que cambia el valor de la propiedad `status` del objeto `Motor` a "on" y agrega un objeto de cambio al historial.
+  turnOn() {
+    this.status = "on";
+    this.history.addChange(this.propulsionTo, this.status);
   }
-  
 
-export class History {
-  constructor() {
-    let changes = [];
-
-    this.addChange = (change) => changes.push(change);
-
-    this.getFullState = () => changes;
+  // Método que cambia el valor de la propiedad `status` del objeto `Motor` a "off" y agrega un objeto de cambio al historial.
+  turnOff() {
+    this.status = "off";
+    this.history.addChange(this.propulsionTo, this.status);
   }
 }
+// Clase History
+export class History {
+  constructor() {
+    // Si la instancia de la clase `History` no existe, crea una nueva y establece una propiedad llamada `history` como un array vacío.
+    if (!History.instance) {
+      History.instance = this;
+      this.history = [];
+    }
+    // Devuelve la instancia existente de la clase `History`.
+    return History.instance;
+  }
 
+  // Método que agrega un objeto de cambio al historial si el último objeto agregado tiene una propiedad diferente de `propulsionTo` o `status`.
+  addChange(propulsionTo, status) {
+    const lastChange = this.history[this.history.length - 1];
+    if (!lastChange || lastChange.propulsionTo !== propulsionTo || lastChange.status !== status) {
+      this.history.push({ propulsionTo, status });
+    }
+  }
+
+  // Método que devuelve una copia del historial.
+  getFullState() {
+    return this.history.slice();
+  }
+}
