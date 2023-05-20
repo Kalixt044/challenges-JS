@@ -1,3 +1,17 @@
 export function sumWithClosure(firstNum) {
-  // Tu código aquí 👈
+  let sum = firstNum || 0;
+
+  function addNumber(nextNum) {
+    if (typeof nextNum === 'number') {
+      sum += nextNum;
+    }
+    return addNumber;
+  }
+
+  addNumber.toString = function () {
+    return sum.toString();
+  };
+
+  return addNumber;
 }
+
