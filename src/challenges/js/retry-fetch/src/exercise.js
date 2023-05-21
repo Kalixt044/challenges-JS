@@ -1,6 +1,16 @@
-export function fetchRetry(url, times, count = 1) {
-  // Tu código aquí 👈
-  // Para poder monitorear de la función fetch en las pruebas
-  // Asegurate de usarla usando window.fetch
-  // Ejemplo window.fetch(...)
+export async function fetchRetry(url, times, count = 1) {
+  try {
+    const response = await window.fetch(url);
+    if (response.ok) {
+      return response.json();
+    } else {
+      throw new Error(`Invalid response: ${response.status}`);
+    }
+  } catch (error) {
+    if (count < times) {
+      return fetchRetry(url, times, count + 1);
+    } else {
+      throw new Error(`Invalid request with ${times} retries`);
+    }
+  }
 }
