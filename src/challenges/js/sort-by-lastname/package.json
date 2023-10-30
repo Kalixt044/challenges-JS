@@ -9,7 +9,11 @@
     "test": "jest"
   },
   "keywords": [],
+<<<<<<< HEAD
   "author": "Aprendiz Digital I J Gallardo Navarro",
+=======
+  "author": "Aprendiz Digital SENA I J Gallardo Navarro",
+>>>>>>> 03487ec3260e759e19f156065e350b258511a1b3
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "7.18.13",

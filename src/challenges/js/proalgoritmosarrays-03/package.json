@@ -9,7 +9,7 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "author": "Aaprendiz Digital I J Gallardo Navarro",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "7.18.13",
@@ -21,5 +21,6 @@
   },
   "jest": {
     "testEnvironment": "jsdom"
-  }
+  },
+  "description": "En este desafío vas a recibir una lista de números que representan un grupo de líneas con diferentes alturas."
 }

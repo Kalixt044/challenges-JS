@@ -9,7 +9,7 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "author": "Aprendiz Digital Sena I. J. Gallardo Navarro",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "7.18.13",
@@ -21,5 +21,6 @@
   },
   "jest": {
     "testEnvironment": "jsdom"
-  }
+  },
+  "description": "En este desafío, tendrás que aplicar el patrón de diseño Singleton en un Chat."
 }

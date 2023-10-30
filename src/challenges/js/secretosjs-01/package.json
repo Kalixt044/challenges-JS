@@ -9,7 +9,7 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "author": "Aprendiz Digital  Sena  I J Gallardo Navarro",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "7.18.13",
@@ -22,5 +22,6 @@
   },
   "jest": {
     "testEnvironment": "jsdom"
-  }
+  },
+  "description": "El Capitan DC envió un mensaje por medio del Satélite Platzi Sat01 para avisarnos que el sistema de comunicación presenta vulnerabilidades."
 }

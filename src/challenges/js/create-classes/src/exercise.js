@@ -8,15 +8,21 @@ class Banda {
     this.integrantes = [];
   }
   agregarIntegrante(integranteNuevo) {
-    // Tu código aquí 👈
-
+    const hayBaterista = this.integrantes.find(integrante => integrante.instrumento === 'Bateria');
+    if (hayBaterista) {
+      throw new Error('Ya hay un baterista en la banda');
+    } else {
+      this.integrantes.push(integranteNuevo);
+    }
   }
 }
 
 //Crear clase Integrante
 class Integrante {
-  // Tu código aquí 👈
-
+  constructor({ nombre, instrumento }) {
+    this.nombre = nombre;
+    this.instrumento = instrumento;
+  }
 }
 
 

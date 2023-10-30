@@ -1,3 +1,4 @@
 export function triangleArea(base, height) {
-  // Tu código aquí 👈
-};
+  const area = (base * height) / 2;
+  return area;
+}
